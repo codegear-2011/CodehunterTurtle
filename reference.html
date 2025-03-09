@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turtle Commander - Command Reference</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        table { width: 80%; margin: 20px auto; border-collapse: collapse; }
+        th, td { border: 1px solid black; padding: 10px; text-align: left; }
+        th { background-color: #4CAF50; color: white; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; display: inline-block; text-align: left; }
+footer {
+  background-color: #333; /* Dark background */
+  color: white; /* White text color */
+  text-align: center; /* Centered text */
+  padding: 20px; /* Padding around the footer content */
+  margin-top: 20px; /* Space above the footer */
+  position: relative; /* Ensure the footer stays at the bottom of the content */
+  bottom: 0;
+  width: 100%; /* Footer spans the full width of the page */
+}
+
+footer p {
+  margin: 0; /* Remove default margin from the paragraph */
+  font-size: 14px; /* Smaller font size */
+}
+    </style>
+</head>
+<body>
+    <h1>Turtle Commander - Command Reference</h1>
+    
+    <h2>Basic Commands</h2>
+    <table>
+        <tr>
+            <th>Command</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td><code>go X</code></td>
+            <td>Moves the turtle forward by <strong>X</strong> pixels.</td>
+            <td><code>go 50</code> (Moves forward 50 pixels)</td>
+        </tr>
+        <tr>
+            <td><code>turn X</code></td>
+            <td>Rotates the turtle by <strong>X</strong> degrees (clockwise).</td>
+            <td><code>turn 90</code> (Turns right by 90°)</td>
+        </tr>
+        <tr>
+            <td><code>turn -X</code></td>
+            <td>Rotates the turtle counterclockwise by <strong>X</strong> degrees.</td>
+            <td><code>turn -45</code> (Turns left by 45°)</td>
+        </tr>
+    </table>
+
+    <h2>Looping (Repeating Commands)</h2>
+    <table>
+        <tr>
+            <th>Command</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td><code>to i in X</code></td>
+            <td>Starts a loop that repeats <strong>X</strong> times.</td>
+            <td><code>to i in 5</code> (Start loop that runs 5 times)</td>
+        </tr>
+        <tr>
+            <td><code>off</code></td>
+            <td>Ends the loop execution.</td>
+            <td><code>off</code> (Closes the loop)</td>
+        </tr>
+    </table>
+
+    <h2>Examples</h2>
+
+    <h3>1. Draw a Triangle</h3>
+    <pre>
+go 100
+turn 120
+go 100
+turn 120
+go 100
+    </pre>
+
+    <h3>2. Draw a Rectangle</h3>
+    <pre>
+go 150
+turn 90
+go 100
+turn 90
+go 150
+turn 90
+go 100
+    </pre>
+
+    <h3>3. Draw a Spiral</h3>
+    <pre>
+to i in 30
+go i * 5
+turn 30
+off
+    </pre>
+
+    <h3>4. Draw a Star</h3>
+    <pre>
+to i in 5
+go 100
+turn 144
+off
+    </pre>
+
+    <h3>5. Draw a Circle</h3>
+    <pre>
+to i in 36
+go 10
+turn 10
+off
+    </pre>
+
+    <h2>How to Use</h2>
+    <p>1. Enter commands in the input box of the Turtle Commander.</p>
+    <p>2. Write one command per line.</p>
+    <p>3. Press "<strong>Run</strong>" to execute the commands.</p>
+
+    <footer>
+        <p>&copy; 2025 Turtle Commander Guide</p>
+    </footer>
+</body>
+          </html>
